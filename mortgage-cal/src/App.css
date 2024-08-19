@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  padding: 12px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+body{
+    background-color: #61dafb;
+}
+.mort-cal{
+  background-color: white;
+  width: 400px;
+  height: 450px;
+  margin: 100px auto;
+}
+.inputs{
+  margin :0 40px;
+
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #06213f;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #06213f;
+  padding: 10px;
+}
+input{
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+}
+.output{
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  height: 50px;
+}
+button{
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #9dafc5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
