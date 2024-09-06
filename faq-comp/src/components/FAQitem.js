@@ -12,7 +12,7 @@ function FAQitem({faq,index}) {
   return (
     <div className='faq-box'>
         <div className='ques' onClick={handleclick}>
-           <button className={isShow?'arrow': ''}>></button>
+           <button className={isShow?'arrow': ''}>▶️</button>
            <div>{faq.question}</div>
         </div>
        { isShow &&<div className='ans'>{faq.answer}</div>}

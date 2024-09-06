@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -48,10 +48,12 @@ function App() {
     <span 
       className={page>1?'':'pagination_disable'}
       onClick={()=>selectedPageHandler(page-1)}>⬅️</span>
+      
     {[...Array(Products.length/10)].map((_,i)=>
       (<span key={i} 
         className={page===i+1?'pagination_selected':''}
       onClick={()=>selectedPageHandler(i+1)}>{i+1}</span>))}
+
     <span
      className={page<Products.length/10?'':'pagination_disable'}
      onClick={()=>selectedPageHandler(page+1)}>➡️</span>
