@@ -56,7 +56,7 @@ const intervalid=setInterval(() => {
     <div className="App">
       {Isloading ?<div>Loading....</div>:
       <>
-        <button className='btn'  onClick={()=>handleOnclick('left')}>{"<"}</button>
+      <button className='btn'  onClick={()=>handleOnclick('left')}>{"<"}</button>
       <img src={Images[CurrIndex]} alt="Not Found"/>
       <button className='btn right' onClick={()=>handleOnclick('right')}>{">"}</button>
       </>}

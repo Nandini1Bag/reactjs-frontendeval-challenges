@@ -112,7 +112,6 @@ return(()=>{
         <button className='button' onClick={handleResume}>Resume</button>
         }
      
-     
       <button className='button' onClick={handleReset}>Reset</button>
       </div>
       </div>
