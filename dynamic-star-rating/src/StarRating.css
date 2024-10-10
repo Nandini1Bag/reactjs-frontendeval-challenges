@@ -1,0 +1,25 @@
+.star-rating {
+    display: flex;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 2rem; /* Adjust size as needed */
+    color: lightgray; /* Default star color */
+    transition: color 0.2s;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .on{
+    color: gold;
+  }
+  .off{
+    color: #928f8f;
+  }
+  
