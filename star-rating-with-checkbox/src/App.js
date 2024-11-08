@@ -3,7 +3,8 @@ import './App.css';
 
 function App() {
 
-  const [ratings,setratings]=useState([false,false,false,false,false]);
+  const [ratings,setratings]=useState(
+    [false,false,false,false,false]);
 
   const handleCheckboxChange=(index)=>{
     const newRating=[...ratings];
@@ -15,8 +16,7 @@ function App() {
       <div className="stars">
         {ratings.map((isChecked, index) => (
           <label key={index} className="star">
-            <input
-              type="checkbox"
+            <input type="checkbox"
               checked={isChecked}
               onChange={() => handleCheckboxChange(index)}
             />
@@ -25,8 +25,7 @@ function App() {
         ))}
       </div>
       <div>
-        <p>
-          Selected Ratings:{" "}
+        <p>Selected Ratings:{" "}
           {ratings
             .map((checked, index) => (checked ? index + 1 : null))
             .filter(Boolean)

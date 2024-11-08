@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 100vh;
+    height: 100vh;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 90px;
+    user-select: none;
+    cursor: pointer;
+    position: relative; /* Added for positioning the rating message */
+  }
+  

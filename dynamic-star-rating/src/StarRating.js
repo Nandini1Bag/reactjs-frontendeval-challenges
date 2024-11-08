@@ -24,11 +24,11 @@ const StarRating = ({ totalStars, onRatingChange, defaultRating = 0 }) => {
                         key={starValue}
                         onClick={() => handleClick(starValue)}
                         onMouseOver={() => setHover(starValue)} // Set hover to current star
-                        onMouseLeave={() => setHover(0)} // Reset hover on mouse leave
+                        onMouseLeave={() => setHover(rating)} // Reset hover on mouse leave
                         className="star-button"
                     >
                         <span
-                            className={`star ${starValue <= (hover || rating) ? 'on' : 'off'}`}
+                            className={`star ${starValue <= ((rating && hover) || hover) ? 'on' : 'off'}`}
                         >
                             &#9733; {/* Star character */}
                         </span>

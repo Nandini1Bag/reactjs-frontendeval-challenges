@@ -62,7 +62,6 @@ const resettimer=()=>{
       setminute(59);
       setsecond(59);
     }
-
     if (sec===0 && minute===0 && hour===0){
      resettimer();
      alert('timer is finshed');
